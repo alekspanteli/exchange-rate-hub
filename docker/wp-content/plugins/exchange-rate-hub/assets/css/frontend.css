@@ -1,0 +1,151 @@
+/**
+ * Exchange Rate Hub - Frontend Styles
+ */
+
+.erh-exchange-rates {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.erh-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #0073aa;
+}
+
+.erh-title {
+    margin: 0;
+    font-size: 24px;
+    color: #23282d;
+    font-weight: 600;
+}
+
+.erh-rates-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.erh-rates-grid.erh-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.erh-rates-grid.erh-cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.erh-rates-grid.erh-cols-3 {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.erh-rates-grid.erh-cols-4 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.erh-rate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.erh-rate-item:hover {
+    background: #fff;
+    border-color: #0073aa;
+    box-shadow: 0 2px 8px rgba(0, 115, 170, 0.1);
+    transform: translateY(-2px);
+}
+
+.erh-currency-code {
+    font-size: 18px;
+    color: #0073aa;
+    font-weight: 700;
+}
+
+.erh-rate-value {
+    font-size: 16px;
+    color: #23282d;
+    font-weight: 500;
+    font-family: 'Courier New', monospace;
+}
+
+.erh-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.erh-last-updated {
+    margin: 0;
+    text-align: right;
+    color: #666;
+    font-size: 13px;
+}
+
+.erh-no-rates {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.erh-error-message {
+    color: #d63638;
+    font-size: 16px;
+}
+
+/* Table layout */
+.erh-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.erh-rates-table thead th {
+    background: #0073aa;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.erh-rates-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.erh-rates-table tbody tr:hover {
+    background: #f7f7f7;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .erh-exchange-rates {
+        padding: 15px;
+    }
+
+    .erh-rates-grid.erh-cols-2,
+    .erh-rates-grid.erh-cols-3,
+    .erh-rates-grid.erh-cols-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .erh-title {
+        font-size: 20px;
+    }
+
+    .erh-currency-code {
+        font-size: 16px;
+    }
+
+    .erh-rate-value {
+        font-size: 14px;
+    }
+}

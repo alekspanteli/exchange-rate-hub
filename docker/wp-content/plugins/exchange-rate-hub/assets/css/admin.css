@@ -1,0 +1,83 @@
+/**
+ * Exchange Rate Hub - Admin Styles
+ */
+
+.erh-admin-wrap {
+    margin: 20px 0;
+}
+
+.erh-admin-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.erh-settings-section,
+.erh-rates-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.erh-settings-section h2,
+.erh-rates-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.erh-last-update {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f0f6fc;
+    border-left: 4px solid #0073aa;
+}
+
+.erh-rates-table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.erh-rates-table th {
+    text-align: left;
+    padding: 10px;
+    background: #f6f7f7;
+}
+
+.erh-rates-table td {
+    padding: 10px;
+}
+
+.erh-rates-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Form styling */
+.form-table th {
+    font-weight: 600;
+}
+
+.form-table input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-table .description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .erh-admin-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Admin notices */
+.notice.erh-notice {
+    margin: 15px 0;
+}
